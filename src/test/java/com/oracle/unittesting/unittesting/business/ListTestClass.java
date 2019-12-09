@@ -101,30 +101,25 @@ class ListTestClass {
 		System.out.println(arrayListMock.size());//0
 		when(arrayListMock.size()).thenReturn(5); 
 		System.out.println(arrayListMock.size());//4
-		
-		 
 	}
 	
 	
-	@Test
-	public void with_spying() {
-		// spy used the real class 
-		//
-		//you use a sky when you want to use the real dependency. 
-		// ie: let the real world action happen, but keep an watch in it
-		
-		ArrayList arrayListMock = spy(ArrayList.class);
-		System.out.println(arrayListMock.get(0)); //null
-		System.out.println(arrayListMock.size()); //0
-		arrayListMock.add("test");
-		arrayListMock.add("test 2");
-		System.out.println(arrayListMock.size());//0
-		when(arrayListMock.size()).thenReturn(5); 
-		System.out.println(arrayListMock.size());//4
-		
-		
-		
-	}
+//	@Test
+//	public void with_spying() {
+//		// spy used the real class 
+//		//
+//		//you use a sky when you want to use the real dependency. 
+//		// ie: let the real world action happen, but keep an watch in it
+//		ArrayList arrayListMock = spy(ArrayList.class);
+//		System.out.println(arrayListMock.get(0)); //null
+//		System.out.println(arrayListMock.size()); //0
+//		arrayListMock.add("test");
+//		arrayListMock.add("test 2");
+//		System.out.println(arrayListMock.size());//0
+//		when(arrayListMock.size()).thenReturn(5); 
+//		System.out.println(arrayListMock.size());//4
+//		
+//	}
 }
 
 
